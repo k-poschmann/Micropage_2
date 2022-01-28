@@ -343,8 +343,8 @@ header nav ul li:hover{
 }
 
 #ideas img{
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     margin-bottom: 5%;
  }
 
@@ -356,8 +356,8 @@ header nav ul li:hover{
 }
 
 #implement img{
-   width: 400px;
-   height: 200px;
+    width: 100%;
+    height: auto;
    margin-bottom: 5%;
 }
 
