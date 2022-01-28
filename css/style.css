@@ -1,0 +1,377 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+section{
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 25px;
+    padding-top: 8%;
+}
+
+hr{
+    width: 300px;
+    color: #5b9f4c;
+    margin: -15px auto 40px auto;
+}
+
+li {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fa-bars{display: none;}
+
+/*--------------HEADER--------------*/
+ header{
+     width: 100%;
+     height: 70px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     text-align: center;
+     background-color: #004d1a;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+ }
+
+ header nav {
+    float: right;
+    margin: 10px 50px 0 0;
+}
+
+header nav ul li{
+    float: left;
+    margin-left: 40px;
+}
+
+a{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+header nav ul li:hover{
+    padding-top: 5px;
+}
+
+a:hover{
+    color: #99e699;
+}
+/*--------------Landingpage--------------*/
+
+#home{
+    background: url(../pic/background.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#titles{
+    width: 700px;
+    height: 400px;
+    margin: 200px auto 0 auto;
+}
+
+#titles h1{
+    font-size: 50px;
+    font-family: cursive;
+}
+
+#titles h2{
+    font-size: 30px;
+    font-family: cursive;
+}
+/*--------------Worum geht es?--------------*/
+
+#about{
+    background-color: #ebfaeb;
+}
+
+#about_container{
+    width: 600px;
+    margin: 0 auto 0 auto;
+}
+
+#about img{
+   width: 150px;
+   height: 150px;
+}
+
+/*--------------Ideenfindung--------------*/
+
+#ideas{
+    background-color: #ffffff;
+}
+
+#ideas_container{
+    width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+#ideas img{
+   width: 500px;
+   height: 300px;
+   margin-right: 30px;
+}
+
+#ideas img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.13);
+    transition: all 300ms;
+    -webkit-transition: all 300ms; 
+    -moz-transition: all 300ms; 
+    -o-transition: all 300ms;
+ }
+
+/*--------------Umsetzung--------------*/
+
+#implement{
+    background-color: #ebfaeb;
+}
+
+#implement_container{
+    width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+#implement img{
+   width: 500px;
+   height: 300px;
+   margin: 0 30px 30px 0;
+}
+
+#implement img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.13);
+    transition: all 300ms;
+    -webkit-transition: all 300ms; 
+    -moz-transition: all 300ms; 
+    -o-transition: all 300ms;
+}
+
+/*--------------Endergebnis--------------*/
+
+#product{
+    background-color: #ffffff;
+}
+
+#product_container{
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+/*--------------Footer--------------*/
+
+footer{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color: #004d1a;
+}
+
+footer p{
+    padding-top: 25px;
+    color: #ffffff;
+}
+
+
+
+/*--------------Media Queries--------------*/
+
+/*--Tablets--*/
+
+@media screen and (max-width: 1024px){
+header{
+    height: auto;
+}
+
+header nav {
+    margin-top: 0;
+}
+
+a{
+    font-size: 15px;
+}
+
+/*----Landing Page----*/
+
+#titles h1{
+    font-size: 40px;
+}
+#titles h2{
+    font-size: 20px;
+}
+
+/*----Ideenfindung----*/
+
+#ideas_container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+#ideas img{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 5%;
+ }
+
+/*----Umsetzung----*/
+
+#implement_container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+#implement img{
+   width: 500px;
+   height: 300px;
+   margin-bottom: 5%;
+}
+
+/*----Endergebnis----*/
+
+#product_container{
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+}
+
+/*--Mobile--*/
+
+@media screen and (max-width: 480px){
+header nav{
+        margin: 0;
+        float: none;
+}
+
+.fa-bars{
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    text-align: right;
+    margin: 0 30px 0 0;
+}
+
+header nav ul{
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+header nav ul.open{
+    height: auto;
+}
+
+header nav ul li{
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 11px;
+    border-top: 1px solid grey;
+}
+
+a{
+    font-size: 11px;
+}
+
+header nav ul li:hover{
+    background-color: #003300;
+}
+
+/*----Landing Page----*/
+
+#titles{
+    width: 90%;
+    height: 400px;
+    margin: 200px auto 0 auto; 
+}
+
+#titles h1{
+    font-size: 30px;
+}
+#titles h2{
+    font-size: 20px;
+}
+
+
+
+/*----Worum geht es?----*/
+
+#about_container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+/*----Ideenfindung----*/
+
+#ideas_container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+#ideas img{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 5%;
+ }
+
+/*----Umsetzung----*/
+
+#implement_container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+#implement img{
+   width: 400px;
+   height: 200px;
+   margin-bottom: 5%;
+}
+
+/*----Endergebnis----*/
+
+#product_container{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+#product_container img{
+    width: 100%;
+}
+
+/*----Footer----*/
+footer p{
+    font-size: 15px;
+}
+}
