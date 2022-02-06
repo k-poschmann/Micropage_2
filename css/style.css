@@ -5,15 +5,69 @@ html, body{
     text-align: center;
 }
 
-section{
-    min-height: 100%;
-}
 
 a{
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     color: black;
+}
+
+.button-animated {
+    display: inline-block;
+  border-radius: 3px;
+  background-color: #004d1a;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 12px;
+  min-width: 15%;
+  max-width: 25%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.button-animated span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-animated span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  
+  .button-animated:hover span {
+    padding-right: 15px;
+  }
+  
+  .button-animated:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.button-animated-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.text-basic-container {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    
 }
 
 li{
@@ -27,7 +81,14 @@ h1, h2, h3 {
 
 h3{
     font-size: 25px;
-    padding-top: 8%;
+    padding-top: 25px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-align: center;
+    margin-top: 5px;
+    text-underline-position: under;
+    text-underline-offset: 15px;
+    padding-bottom: 10px;
 }
 
 hr{
@@ -40,6 +101,7 @@ li {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 3
 
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
 }
 
 .fa-bars{display: none;}
@@ -96,10 +158,12 @@ a:hover{
 
 #titles h1{
     font-size: 50px;
+
 }
 
 #titles h2{
     font-size: 30px;
+
 }
 /*--------------Worum geht es?--------------*/
 
@@ -108,8 +172,9 @@ a:hover{
 }
 
 #about_container{
-    width: 600px;
+    width: 75%;
     margin: 0 auto 0 auto;
+    padding-bottom: 25px;
 }
 
 #about img{
@@ -124,8 +189,9 @@ a:hover{
 }
 
 #ideas_container{
-    width: 1200px;
+    width: 75%;
     margin: 0 auto 0 auto;
+    padding-bottom: 25px;
 }
 
 #ideas img{
@@ -153,8 +219,9 @@ a:hover{
 }
 
 #implement_container{
-    width: 1200px;
+    width: 75%;
     margin: 0 auto 0 auto;
+    padding-bottom: 25px;
 }
 
 #implement img{
@@ -182,8 +249,9 @@ a:hover{
 }
 
 #product_container{
-    width: 1000px;
+    width: 75%;
     margin: 0 auto 0 auto;
+    padding-bottom: 25px;
 }
 
 /*--------------Footer--------------*/
@@ -191,13 +259,13 @@ a:hover{
 footer{
     width: 100%;
     height: 70px;
-    text-align: center;
     background-color: #004d1a;
 }
 
 footer p{
     padding-top: 25px;
     color: #ffffff;
+    text-align: center;
 }
 
 
@@ -254,6 +322,8 @@ a{
    margin-bottom: 5%;
 }
 
+
+
 /*----Endergebnis----*/
 
 #product_container{
@@ -262,9 +332,6 @@ a{
 }
 
 }
-
-
-
 
 /*--Mobile--*/
 
@@ -275,12 +342,12 @@ header nav{
 }
 
 .fa-bars{
-    font-size: 40px;
-    color: #ffffff;
+    font-size: 20px;
     display: inline-block;
     width: 100%;
     cursor: pointer;
-    margin-top: 2%;
+    text-align: right;
+    margin: 0 30px 0 0;
 }
 
 header nav ul{
@@ -296,11 +363,10 @@ header nav ul.open{
 
 header nav ul li{
     width: 100%;
-    margin: 0;
     padding: 5px 0;
+    margin: 0;
     font-size: 11px;
     border-top: 1px solid grey;
-    background-color: #004d1a;
 }
 
 a{
@@ -331,7 +397,7 @@ header nav ul li:hover{
 /*----Worum geht es?----*/
 
 #about_container{
-    width: 80%;
+    width: 100%;
     margin: 0 auto 0 auto;
 }
 
@@ -343,8 +409,8 @@ header nav ul li:hover{
 }
 
 #ideas img{
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 200px;
     margin-bottom: 5%;
  }
 
@@ -356,8 +422,8 @@ header nav ul li:hover{
 }
 
 #implement img{
-    width: 100%;
-    height: auto;
+   width: 400px;
+   height: 200px;
    margin-bottom: 5%;
 }
 
